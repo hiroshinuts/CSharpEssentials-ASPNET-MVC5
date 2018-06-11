@@ -1,0 +1,31 @@
+﻿@model IEnumerable<Mvc_EF.Models.Cliente>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Clientes</title>
+</head>
+<body>
+    <div> 
+        <table border="1">
+            @foreach(var cli in Model)
+            {
+            <tr>
+                <td>@Html.DisplayFor(c => cli.ClienteId)</td>
+                <td>@Html.DisplayFor(c => cli.Nome)</td>
+                <td>@Html.DisplayFor(c => cli.Email)</td>
+                <td>@Html.DisplayFor(c => cli.Telefone)</td>
+            </tr>
+            }
+        </table>
+
+
+    </div>
+</body>
+</html>

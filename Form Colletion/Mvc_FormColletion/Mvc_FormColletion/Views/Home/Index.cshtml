@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        @using (Html.BeginForm("SalvarCliente", "Home"))
+        {
+            <fieldset>
+                <legend>Formulario de Cadastro</legend>
+                <ol>
+                    <li>
+                        @Html.Label("Nome")
+                        @Html.TextBox("nome")
+                    </li>
+                    <li>
+                        @Html.Label("Email")
+                        @Html.TextBox("email")
+                    </li>
+                    <li>
+                        @Html.Label("Sexo")
+                        @Html.TextBox("sexo")
+                    </li>
+                    <li>
+                        @Html.Label("Idade")
+                        @Html.TextBox("idade")
+                    </li>
+                </ol>
+                <input type="submit" value="Enviar Dados" />
+            </fieldset>
+        }
+    </div>
+</body>
+</html>

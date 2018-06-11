@@ -1,0 +1,60 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>View Index.cshtml do controlador HomeController</h1>
+        <h1>Valores obtidos do HomeControle via ViewData</h1>
+
+        <div>
+            <b>Nome: </b> @ViewData["Nome"] </br>
+            <b>Email: </b> @ViewData["Email"] </br>
+            <b>Curso: </b> @ViewData["Curso"] </br>
+            <b>Data Inicio: </b> @ViewData["DataInicio"] </br>
+        </div>
+
+        <h1>Valores obtidos do HomeControle via ViewBag</h1>
+
+        <div>
+            <b>Nome: </b> @ViewBag.Nome </br>
+            <b>Email: </b> @ViewBag.Email </br>
+            <b>Curso: </b> @ViewBag.Curso </br>
+            <b>Data Inicio: </b> @ViewBag.DataInicio </br>
+        </div>
+
+        <h1>Valores obtidos do HomeControle via ViewData Foreach Lista</h1>
+
+        <div>
+            <ul>
+                @foreach (var strPais in (List<string>)ViewData["Paises0"])
+            {
+                <li>@strPais</li>
+        }
+            </ul>
+        </div>
+
+
+
+        <h1>Valores obtidos do HomeControle via ViewBag Foreach Lista</h1>
+
+        <div>
+            <ul>
+                @foreach (var strPais in ViewBag.Paises)
+            {
+                <li>@strPais</li>
+        }
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

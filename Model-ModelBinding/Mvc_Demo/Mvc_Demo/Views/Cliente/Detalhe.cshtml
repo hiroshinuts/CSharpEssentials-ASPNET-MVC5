@@ -1,0 +1,93 @@
+﻿@model Mvc_Demo.Models.Cliente
+
+@{ 
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Detalhe</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Cliente Methodo Get - Do controller Tipado para a Tela</legend>
+            <b>@ViewBag.ClienteId</b><br />
+            <b>@ViewBag.Nome</b>
+
+            <div>
+                <label for="ClienteId">Id</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.ClienteId" id="ClienteId" name="ClienteId" />
+            </div>
+
+            <div>
+                <label for="Nome">Nome</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Nome" id="Nome" name="Nome" />
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Email" id="Email" name="Email" />
+            </div>
+
+            <div>
+                <label for="Telefone">Telefone</label>
+            </div>
+            <div>
+                <input type="text" value="@Model.Telefone" id="Telefone" name="Telefone" />
+            </div>
+
+        </fieldset>
+    </div>
+    <div>
+        <form action="/Cliente/SalvarCliente" method="POST">
+            <fieldset>
+                <legend>Cliente Methodo Post - Envio de Dados</legend>
+  
+                <div>
+                    <label for="ClienteId">Id</label>
+                </div>
+                <div>
+                    <input type="text" value="@Model.ClienteId" id="ClienteId" name="ClienteId" />
+                </div>
+
+                <div>
+                    <label for="Nome">Nome</label>
+                </div>
+                <div>
+                    <input type="text" value="@Model.Nome" id="Nome" name="Nome" />
+                </div>
+
+                <div>
+                    <label for="Email">Email</label>
+                </div>
+                <div>
+                    <input type="text" value="@Model.Email" id="Email" name="Email" />
+                </div>
+
+                <div>
+                    <label for="Telefone">Telefone</label>
+                </div>
+                <div>
+                    <input type="text" value="@Model.Telefone" id="Telefone" name="Telefone" />
+                </div>
+                       
+				<p>
+					<input type="submit" value="Enviar" />
+				</p>
+				
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+</html>

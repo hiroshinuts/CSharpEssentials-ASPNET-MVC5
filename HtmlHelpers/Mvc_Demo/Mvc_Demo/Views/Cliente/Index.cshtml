@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <h2>Clique no link abaixo para ver detalhe do cliente</h2>
+    <div>
+        @*Criar o Link*@
+        @*Recebe os parametros "Texto que vai ser exibido", "Action", "Controlador" -- Apenas 2 são obrigatorios, se nao passa o controller, envia para o mesmo que estiver*@
+        <p>@Html.ActionLink("Clique Aqui para ver detalhe do cliente", "Detalhe")</p>
+    </div>
+</body>
+</html>
