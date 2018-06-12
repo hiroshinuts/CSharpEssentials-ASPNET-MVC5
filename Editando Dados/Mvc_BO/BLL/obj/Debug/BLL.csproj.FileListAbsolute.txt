@@ -1,0 +1,18 @@
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\bin\Debug\BLL.dll
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\bin\Debug\BLL.pdb
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\obj\Debug\BLL.dll
+C:\Users\Hiro\Desktop\C# Mvc Macoratti\Business Object - Acesso via ADO NET\Mvc_BO\BLL\obj\Debug\BLL.pdb
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\bin\Debug\BLL.dll
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\bin\Debug\BLL.pdb
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\obj\Debug\BLL.dll
+C:\Users\Hiro\Desktop\AspNet MVC5\Inserindo Dados (UpdateModel e TryUpdateModel)\Mvc_BO\BLL\obj\Debug\BLL.pdb
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\obj\Debug\BLL.csprojResolveAssemblyReference.cache
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\obj\Debug\BLL.dll
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\obj\Debug\BLL.pdb
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\bin\Debug\BLL.dll
+C:\Users\Hiro\Desktop\AspNet MVC5\Editando Dados\Mvc_BO\BLL\bin\Debug\BLL.pdb
