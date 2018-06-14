@@ -1,0 +1,56 @@
+﻿@model Mvc_RoutingAtributo.Models.Livro
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Livro</title>
+</head>
+<body>
+    <p>
+        <h2>Livro por Código</h2>
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ISBN)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Titulo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Autor)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idioma)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AnoPublicacao)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Preco)
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.ISBN)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Titulo)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Autor)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Idioma)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.AnoPublicacao)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Preco)
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
