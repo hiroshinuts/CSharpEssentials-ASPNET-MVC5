@@ -1,0 +1,30 @@
+﻿@model Mvc_Rotas.Models.Produto
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Exibir Produtos</title>
+</head>
+<body>
+    <h2>@Model.Nome</h2>
+    <hr />
+    <div>
+        <ul>
+            <li>
+                <em>
+                    Valor : <b>@Model.Preco</b> - @Html.ActionLink(Model.Categoria, "Categorias", "Produto", new { @categoria = Model.Categoria}, null)
+                </em>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <b>@Model.Descricao</b>
+    </div>
+    <div>
+        <hr />
+        @Html.ActionLink("Retornar", "Index")
+    </div>
+</body>
+</html>

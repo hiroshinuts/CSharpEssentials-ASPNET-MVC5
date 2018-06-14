@@ -1,0 +1,32 @@
+﻿@model  IEnumerable<Mvc_Rotas.Models.Produto>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Todos os Produtos</title>
+</head>
+<body>
+    <h2>@ViewBag.Produtos</h2>
+    <hr />
+    <div>
+
+        <ul>
+            @foreach (var item in Model)
+        {
+            <li>
+                @Html.ActionLink(item.Nome, "Detalhes", "Produto", new { @produtoId = item.ProdutoId }, null)
+                <em>@Html.DisplayFor(modelItem => item.Categoria)</em>
+                <em>@Html.DisplayFor(modelItem => item.Data)</em>
+                <b>@Html.DisplayFor(modelItem => item.Preco)</b>
+            </li>
+    }
+        </ul>
+        <div>
+            @Html.ActionLink("Cadastrar Produto", "Cadastrar")
+        </div>
+
+    </div>
+</body>
+</html>
