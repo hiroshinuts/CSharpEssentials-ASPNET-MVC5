@@ -1,0 +1,76 @@
+﻿<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+<head>
+    <script>
+        function LimpaDadosDiv()
+        {
+            $("#divTimes").empty();
+        }
+
+        function CancelaAction()
+        {
+            if (1==2)
+            {
+                return true;
+            }
+            else
+            {
+                alert('O método Action não foi invocado..');
+                return false;
+            }
+        }
+        function ContaLinhas()
+        {
+            alert(($("#tableTimes tr").length - 1) + ' linhas retornadas...');
+        }
+
+    </script>
+</head>
+<div style="font-family:Arial">
+    <div>
+        <h2>Campeonato Brasileiro 2015</h2>
+    </div>
+    <hr />
+    @*Hora Atual : @DateTime.Now.ToLongTimeString()*@
+    <br />
+    <!-- classificação geral-->
+    @Ajax.ActionLink("Classificação Geral","Geral",  new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "divTimes",
+        InsertionMode = InsertionMode.Replace,
+        LoadingElementId = "loadingId",
+        OnBegin = "LimpaDadosDiv",
+        OnSuccess = "ContaLinhas"
+    })
+    <span style="color:Blue">|</span>
+    <!-- libertadores-->
+    @Ajax.ActionLink("Libertadores", "Libertadores", new AjaxOptions
+    {
+        HttpMethod = "GET",
+        UpdateTargetId = "divTimes",
+        InsertionMode = InsertionMode.Replace,
+        LoadingElementId = "loadingId",
+        OnBegin = "CancelaAction"
+    })
+    <span style="color:Blue">|</span>
+    <!-- rebaixados-->
+    @Ajax.ActionLink("Rebaixados", "Rebaixados", new AjaxOptions
+{
+    HttpMethod = "GET",
+    UpdateTargetId = "divTimes",
+    InsertionMode = InsertionMode.Replace,
+    LoadingElementId = "loadingId",
+    OnBegin = "LimpaDadosDiv",
+    OnSuccess = "ContaLinhas"
+})
+    <br />
+ 
+    <div id="loadingId" style="display:none">
+        <img src="~/Imagens/spiffygif_30x30.gif" />
+    </div>
+
+    <!-- exibição dos dados-->
+    <div id="divTimes"></div>
+  
+</div>

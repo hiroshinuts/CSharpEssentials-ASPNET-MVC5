@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Mvc_AjaxBeginForm.Models.Product>
+
+<div style="font-family:Algerian">
+    <ul>
+        @foreach (var item in Model)
+        {
+             <li>
+                 @item.ProductName
+             </li>
+        }
+    </ul>
+</div>

@@ -1,0 +1,36 @@
+﻿<script src="~/Scripts/jquery-1.10.2.min.js"></script>
+<script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+
+<div style="font-family:Arial">
+    <div>
+        <h2>Campeonato Brasileiro 2015</h2>
+    </div>
+    <hr />
+
+    <!-- classificação geral-->
+    @Ajax.ActionLink("Classificação Geral","Geral",  new AjaxOptions
+     {
+         HttpMethod = "GET",
+         UpdateTargetId = "divTimes",
+         InsertionMode = InsertionMode.Replace
+     })
+    <span style="color:Blue">|</span>
+    <!-- libertadores-->
+    @Ajax.ActionLink("Libertadores", "Libertadores", new AjaxOptions
+     {
+         HttpMethod = "GET",
+         UpdateTargetId = "divTimes",
+         InsertionMode = InsertionMode.Replace
+     })
+    <span style="color:Blue">|</span>
+    <!-- rebaixados-->
+    @Ajax.ActionLink("Rebaixados", "Rebaixados", new AjaxOptions
+     {
+         HttpMethod = "GET",
+         UpdateTargetId = "divTimes",
+         InsertionMode = InsertionMode.Replace
+     })
+    <br />
+    <!-- exibição dos dados-->
+    <div id="divTimes"></div>
+</div>

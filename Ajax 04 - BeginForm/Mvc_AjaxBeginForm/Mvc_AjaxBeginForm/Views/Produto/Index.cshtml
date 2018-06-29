@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.unobtrusive-ajax.min.js"></script>
+</head>
+<body>
+    <div style="font-family:Arial"> 
+        <h1>Macoratti .net - Produtos Por nome</h1>
+        <h3>Produtos</h3>
+        <div>
+            @using (Ajax.BeginForm("Localizar",
+                                   "Produto",
+             new AjaxOptions
+             {
+                 UpdateTargetId = "relacaoProdutos",
+                 InsertionMode = InsertionMode.Replace,
+                 HttpMethod = "POST"
+             }))
+            {
+                @:Digite o critério de busca <br />
+                @Html.TextBox("criterio", null, new { size = 25})
+                <input type="submit" value="Localizar Produto" />
+            }
+        </div>
+    </div>
+    <div id="relacaoProdutos">
+    </div>
+</body>
+</html>
