@@ -1,0 +1,80 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<div class="jumbotron">
+    <h3>Razor</h3>
+</div>
+
+@{var mensagem = "Macoratti .net";}
+
+<p>@mensagem</p>
+
+@{
+    var num1 = 2000;
+    var num2 = 15;
+    var resultado = num1 + num2;
+}
+<p> O ano atual é : @resultado </p>
+
+@{
+   var numero1 = 2000;
+   var numero2 = 15;
+   if ( numero1 > numero2) 
+   {
+       <p>@numero1 é maior</p>
+   }
+   else
+   {
+       <p>@numero2 é maior</p>
+   }
+ }
+
+@* ------------------------------------------------------ *@
+@* criando um helper com razor*@
+
+@{ var vetor = new List<int> { 100, 20, 40, 70, 80 };
+   <ul>
+       @{
+           foreach (int valor in vetor)
+           {
+               <li>@ValorColorido(valor)</li>
+           }
+       }
+   </ul>
+}
+
+@helper ValorColorido(int valor)
+{
+    var cor = "Blue";
+    if ( valor > 50 )
+    {
+        cor = "Red";
+    }
+    <span style="color:@cor">@String.Format("{0:c}", valor)</span>
+}
+
+@*---------------------------------------------------------------*@
+
+@{ var engine = "Razor"; }
+@{ var IDE = "ASP .NET MVC"; }
+
+    <p>A IDE utilizada é o: @IDE </p>
+    <p>A view engine utilizada é o : @engine</p>
+
+    @{  var texto = "O ASP .NET MVC e o Razor são tecnologias  ";
+        var empresa = "Microsoft.";
+        var textoCompleto = texto + " : " + empresa;
+    }
+    <p>@textoCompleto</p>
+    
+@{
+    
+}
+
+@{
+    for (var i = 1; i < 6; i++)
+    {
+        <p>@i</p>
+    }
+}
+
